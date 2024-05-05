@@ -1,0 +1,25 @@
+.background-container {
+    position: relative;
+    width: 700;
+    height: 700;
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/arrow.png'); /* Your arrow image */
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+  }
+  
+  .background-container:hover .arrow {
+    opacity: 1; /* Show arrow on hover */
+  }
+  
