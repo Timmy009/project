@@ -20,6 +20,7 @@ import facebook from '../assets/facebook.png'
 import insta from '../assets/insta.png'
 import linked from '../assets/linked.png'
 import pint from '../assets/pint.png'
+import { Link } from "react-router-dom";
 // import Slider from 'react-slick';
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
@@ -239,31 +240,31 @@ function Home() {
                     <p style={{textAlign:'left', color:'white'}} >Category</p>
                     </div>
                    
-                    <img src={projectOne} />
+                    <Link to="/Project"> <img src={projectOne} /> </Link>
                     <div style={{position:'absolute', marginTop:560, marginLeft:20}} >
                     <h1 style={{color:'white', marginBottom:-10}} >Project Title</h1>
                     <p style={{textAlign:'left', color:'white'}} >Category</p>
                     </div>
-                    <img src={projectTwo} style={{marginTop:30}} />
+                    <Link to="/Project">  <img src={projectTwo} style={{marginTop:30}} /> </Link>
                 </div>
                 <div style={{width:'30%', margin:10, }} >
                 <div style={{position:'absolute', marginTop:550, marginLeft:20}} >
                     <h1 style={{color:'white', marginBottom:-10}} >Project Title</h1>
                     <p style={{textAlign:'left', color:'white'}} >Category</p>
                     </div>
-                    <img src={projectThree} style={{height:'90%'}} />
+                    <Link to="/Project"> <img src={projectThree} style={{height:'90%'}} /> </Link>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', marginLeft:20, marginTop:10, width:'31%'}} >
                 <div style={{position:'absolute', marginTop:220, marginLeft:20}} >
                     <h1 style={{color:'white', marginBottom:-10}} >Project Title</h1>
                     <p style={{textAlign:'left', color:'white'}} >Category</p>
                     </div>
-                    <img src={projectFour} />
+                    <Link to="/Project"> <img src={projectFour} /> </Link>
                     <div style={{position:'absolute', marginTop:550, marginLeft:20}} >
                     <h1 style={{color:'white', marginBottom:-10}} >Project Title</h1>
                     <p style={{textAlign:'left', color:'white'}} >Category</p>
                     </div>
-                    <img src={projectFive} style={{marginTop:30}} />
+                    <Link to="/Project">  <img src={projectFive} style={{marginTop:30}} /> </Link>
                 </div>
             </div>
 <div>
