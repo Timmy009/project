@@ -20,8 +20,8 @@ import facebook from '../assets/facebook.png'
 import insta from '../assets/insta.png'
 import linked from '../assets/linked.png'
 import pint from '../assets/pint.png'
-import { Link } from "react-router-dom";
 import rep from '../assets/rep.png'
+import { Link } from "react-router-dom";
 // import Slider from 'react-slick';
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
@@ -47,7 +47,7 @@ function Home() {
 
     //   const Slide = ({ image, text }) => {
     //     return (
-    //       <div style={{ backgroundImage: `url(${image})`, height: '100vh', backgroundSize: 'cover' }}>
+    //       <div style={{ backgroundImage: url(${image}), height: '100vh', backgroundSize: 'cover' }}>
     //         <div className="text-overlay">
     //           <h1>{text}</h1>
     //         </div>
@@ -203,32 +203,32 @@ function Home() {
 
             </div>
             <div style={{ marginTop: 300 }} >
-                <h1 style={{ color: 'white', marginBottom: 40 }} >Selected Projects</h1>
+                <h1 style={{ color: 'white', marginBottom: 40,textAlign:'center' }} >Selected Projects</h1>
                 <Slick />
             </div>
             <hr style={{ color: 'white', marginTop: 70, borderColor:'#b3a9a2' }} />
 
             <div style={{ marginTop: 50, marginBottom: 20 }} >
-                <h1 style={{ color: 'white', marginBottom: 40,  }} >All Projects</h1>
-                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginLeft: 40, marginRight: 40, backgroundColor: 'white', }} >
+                <h1 style={{ color: 'white', marginBottom: 40,textAlign:'center'  }} >All Projects</h1>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginLeft: 40, marginRight: 60, backgroundColor: 'white', }} >
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '30%', borderRight: '1px', borderRightStyle: 'solid', borderRightColor: 'black' }} >
                         <h2 style={{ fontSize: 20, fontWeight: "normal", marginLeft: 20 }} >Project Type</h2>
                         <h2 style={{ fontSize: 20, }} >All</h2>
-                        <img src={drop} style={{ width: 15, height: 15, paddingTop: 20, paddingRight: 22, marginLeft: -40 }} />
+                        <img src={drop} style={{ width: 15, height: 15, paddingTop: 20, paddingRight: 22, marginLeft: -150, marginTop:2 }} />
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '22%', borderRight: '1px', borderRightStyle: 'solid', borderRightColor: 'black', marginLeft: 0 }} >
                         <h2 style={{ fontSize: 20, fontWeight: "normal", marginLeft: -40 }} >Region</h2>
                         <h2 style={{ fontSize: 20, }} >All</h2>
-                        <img src={drop} style={{ width: 15, height: 15, paddingTop: 20, paddingRight: 22, marginLeft: -40 }} />
+                        <img src={drop} style={{ width: 15, height: 15, paddingTop: 20, paddingRight: 22,  marginLeft: -150, marginTop:2}} />
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '22%', borderRight: '1px', borderRightStyle: 'solid', borderRightColor: 'black', marginLeft: 0 }} >
                         <h2 style={{ fontSize: 20, fontWeight: "normal", marginLeft: -40 }} >Country</h2>
                         <h2 style={{ fontSize: 20, }} >All</h2>
-                        <img src={drop} style={{ width: 15, height: 15, paddingTop: 20, paddingRight: 22, marginLeft: -40 }} />
+                        <img src={drop} style={{ width: 15, height: 15, paddingTop: 20, paddingRight: 22,  marginLeft: -150, marginTop:2 }} />
 
                     </div>
                     <div style={{ width: '2%', }}  >
-                        <h1 style={{ fontSize: 20, fontWeight: "normal", marginLeft: -100 }} >Sort A-Z</h1>
+                        <h1 style={{ fontSize: 20, fontWeight: "normal", marginLeft: -80 }} >Sort A-Z</h1>
                     </div>
                 </div>
             </div>
@@ -240,35 +240,35 @@ function Home() {
                         <p style={{ textAlign: 'left', color: 'white', fontSize:'1em' }} >Category</p>
                     </div>
 
-                    <img src={projectOne} />
+                    <Link to="/Project">  <img src={projectOne} style={{marginTop:30}} /> </Link> 
                     <div style={{ position: 'absolute', marginTop: "45%", marginLeft: 20 }} >
                         <h1 style={{ color: 'white', marginBottom: -10, fontSize:'1em' }} >Project Title</h1>
                         <p style={{ textAlign: 'left', color: 'white', fontSize:'1em' }} >Category</p>
                     </div>
-                    <img src={projectTwo} style={{ marginTop: 30 }} />
+                    <Link to="/Project">  <img src={projectTwo} style={{marginTop:30}} /> </Link>
                 </div>
                 <div style={{ width: '30%', margin: 10, }} >
                     <div style={{ position: 'absolute', marginTop: "45%", marginLeft: 20 }} >
                         <h1 style={{ color: 'white', marginBottom: -10, fontSize:'1em' }} >Project Title</h1>
                         <p style={{ textAlign: 'left', color: 'white', fontSize:'1em' }} >Category</p>
                     </div>
-                    <Link to="/Project"> <img src={projectThree} style={{height:'90%'}} /> </Link>
+                    <Link to="/Project">  <img src={projectThree} style={{marginTop:30}} /> </Link>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 20, marginTop: 10, width: '31%' }} >
                     <div style={{ position: 'absolute', marginTop: "16%", marginLeft: 20 }} >
                         <h1 style={{ color: 'white', marginBottom: -10, fontSize:'1em' }} >Project Title</h1>
                         <p style={{ textAlign: 'left', color: 'white', fontSize:'1em' }} >Category</p>
                     </div>
-                    <Link to="/Project"> <img src={projectFour} /> </Link>
-                    <div style={{position:'absolute', marginTop:550, marginLeft:20}} >
-                    <h1 style={{color:'white', marginBottom:-10}} >Project Title</h1>
-                    <p style={{textAlign:'left', color:'white'}} >Category</p>
+                    <Link to="/Project">  <img src={projectFour} style={{marginTop:30}} /> </Link>
+                    <div style={{ position: 'absolute', marginTop: "45%", marginLeft: 20 }} >
+                        <h1 style={{ color: 'white', marginBottom: -10 , fontSize:'1em'}} >Project Title</h1>
+                        <p style={{ textAlign: 'left', color: 'white', fontSize:'1em' }} >Category</p>
                     </div>
                     <Link to="/Project">  <img src={projectFive} style={{marginTop:30}} /> </Link>
                 </div>
             </div>
             <div style={{marginTop:100}} >
-                <h1 style={{ color: 'white', fontSize: 25 }} >PDBS</h1>
+                <h1 style={{ color: 'white', fontSize: 25,textAlign:'center' }} >PDBS</h1>
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
                     <p style={{ color: '#b3a9a2', margin: 10, fontSize: 10 }} >
                         Architecture
@@ -301,14 +301,14 @@ function Home() {
 
             </div>
 
-            <div style={{ marginTop: 30 }} >
-                <img src={facebook} style={{ marginRight: 10 }} />
+            <div style={{ marginTop: 30, display:'flex', justifyContent:'center' }} >
+                <img src={facebook} style={{ marginRight: 10 ,alignItems:'center'}} />
                 <img src={insta} style={{ marginRight: 10 }} />
                 <img src={linked} style={{ marginRight: 10 }} />
                 <img src={pint} style={{ marginRight: 10, backgroundColor: 'blue' }} />
             </div>
 
-            <div style={{ fontSize: 10, color: '#b3a9a2', marginTop: 10, marginBottom:100 }} >
+            <div style={{ fontSize: 10, color: '#b3a9a2', marginTop: 10, marginBottom:100, textAlign:'center' }} >
                 &copy; OurCompany Name All rights reserved
             </div>
         </div>
@@ -317,5 +317,3 @@ function Home() {
 }
 
 export default Home
-
-
