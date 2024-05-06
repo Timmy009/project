@@ -1,7 +1,9 @@
 import React from 'react'
 import menu from '../assets/menu-icon.png' 
 import backgroundone from '../assets/background-one.png'
-import homeImg from '../assets/Aeroflot-Air-HostessForDetails.jpg'
+import rep from '../assets/rep.png'
+import rectangle from '../assets/Rectangle 200.png'
+import arrow from '../assets/arrow-down-right.png'
 
 
 function Project(){
@@ -23,7 +25,7 @@ function Project(){
                 <hr style={{ marginBottom: 80 }} />
                 <div style={{ display: 'flex', flexDirection: 'row', marginTop: 40, height: 800 }} >
                     <div>
-                        <img style={{ height: 1000, width: 600 }} src={homeImg} />
+                    <img style={{ height: 1000, width: 600 }} src={rep} />
                     </div>
                     <div style={{
                         marginLeft: 60, overflow: 'scroll',
@@ -150,9 +152,10 @@ function Project(){
 
              </div>
              <div style={{color: 'black',marginBottom:80}}>
-      <img style={{width:'100%', height: '500px',marginTop:'20%',marginLeft:'10%',padding:'5%' }} src={backgroundone} />
+      <img style={{width:'100%', height: '500px',marginTop:'20%',marginLeft:'10%',padding:'5%' }} src={rectangle} />
       <h1 style={{color:'white',fontWeight: 500,fontSize:80, marginLeft:50}}>NEXT PROJECT</h1>
       <p style={{color:'white',marginLeft:50}}>Category</p>
+      <img style={{marginLeft:'80%' }} src={arrow} />
       </div>
       
             </div>
