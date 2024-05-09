@@ -23,3 +23,16 @@
     opacity: 1; /* Show arrow on hover */
   }
   
+  .app {
+    position: relative;
+}
+
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    transition: all 0.3s ease; /* Adjust the transition speed as needed */
+}
+
+.hovered {
+    cursor: none; /* Hide the default cursor when hovering over the image */
+}
