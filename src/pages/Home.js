@@ -139,7 +139,7 @@ function Home() {
                 <div
                     style={{ backgroundColor: 'black', flexDirection: 'row', paddingLeft: 60, paddingRight: 60, display: 'flex', justifyContent: 'space-between', marginBottom: -15, }}
                 >
-                    <img src={logo} alt='logo' style={{ width: 40, height: 40 }} />
+                    <img src={logo} alt='logo' style={{ width: '5%', height: '5%' }} />
                     {/* <h1 style={{ color: 'white', fontSize: 25,  }} >Proactive DBS</h1> */}
                     {/* <img src={menu} /> */}
                     <div style={{ display: 'flex', flexDirection: 'row', gap: 30, backgroundColor: 'black' }} >
@@ -153,17 +153,18 @@ function Home() {
                     <button style={{ backgroundColor: 'yellow', paddingLeft: 25, paddingRight: 25, borderRadius: 20, }} >Get in Touch</button>
                 </div>
             </div>
-            <div style={{ backgroundColor: 'black', paddingBottom: 60, }} >
+            <div style={{ backgroundColor: '#5e5d59', paddingBottom: 60, }} >
                 <div
 
                     style={{
-                        backgroundColor: 'black', marginTop: -35,
+                        backgroundColor: '#CCCCCC',
                         backgroundImage: `url(${backgrounds[backgroundIndex]})`,
+                        width: '100%',
                         height: "500px",
                     }}
                 >
-                    <div >
-                        <div style={{ alignItems: 'flex-start', }} >
+                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }} >
+                        <div style={{}} >
 
                             <h1 style={{ textAlign: 'left', paddingTop: 200, paddingLeft: 20, color: 'white', fontSize: 50 }} >Project Title</h1>
                             <p style={{ textAlign: 'left', paddingTop: 40, paddingLeft: 20, width: 400, color: 'white' }} >Lorem ipsum dolor sit amet, consectetur
@@ -176,26 +177,32 @@ function Home() {
 
                         </div>
 
+                        <div>
+                            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 300 }} >
+                                <h1 style={{ color: 'white', marginTop: -5, fontSize: 18, marginRight: 10 }} >4</h1>
+                                <hr style={{ borderColor: 'white', backgroundColor: 'white', width: 400, height: 1, marginRight: 10 }} />
+                            </div>
+                            <h1 style={{ color: 'white', marginTop: -5, fontSize: 18 }} >Health Facility</h1>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div style={{ backgroundColor: '#403E3D' }} >
-                <div style={{ marginRight: 85, marginLeft: 85, marginTop: 40, }} >
-                    <hr style={{ marginBottom: 90, borderColor: '#b3a9a2', marginTop: 150 }} />
-                </div>
-                <div style={{ backgroundColor: '#403E3D', display: 'flex', flexDirection: 'row', marginTop: 40, height: 800, }} >
-                    <div>
-                        <img style={{ height: 600, width: 500, marginLeft: 90, }} src={rep} />
+            <div style={{ backgroundColor: '#403E3D', width:'100%'}} >
+
+                <div style={{ backgroundColor: '#403E3D', display: 'flex', flexDirection: 'row', marginTop: 40, height: 800, justifyContent:'center'}} >
+                    <div style={{ marginTop: -80, }} >
+                        <img style={{ height: 600, width: "100%",  }} src={rep} />
                     </div>
                     <div style={{
                         width: 500,
                         marginLeft: 60, overflow: 'scroll',
-                        scrollbarWidth: 'none', height: 600, marginRight: 90
+                        scrollbarWidth: 'none', height: 600, marginRight: 90, marginTop: -75,
 
 
                     }} >
                         <div>
-                            <h1 style={{ color: '#b3a9a2', marginTop: 0, textAlign: 'justify', fontSize: 30, fontWeight: 'normal' }} >We are dedicated to addressing the evolving <span style={{ color: 'white' }} >requirements of the world's most dynamic companies.</span></h1>
+                            <h1 style={{ color: 'white', marginTop: 0, textAlign: 'justify', fontSize: 30, fontWeight: 'normal' }} >We are dedicated to addressing the evolving <span style={{ color: 'white' }} >requirements of the world's most dynamic companies.</span></h1>
                             <hr style={{ marginBottom: 20, marginTop: 30, borderColor: '#b3a9a2' }} />
 
 
@@ -291,10 +298,10 @@ function Home() {
                 <img src={tip} style={{ marginLeft: 40, marginRight: 20, width: '92%', marginTop: 20, marginBottom: -40 }} />
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'row', marginRight: 20, marginLeft: 35, marginTop: 40, }} >
-                <div style={{ display: 'flex', flexDirection: 'column', margin: 10, width: '30%' }} >
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent:"center", marginTop:30 }} >
+                <div style={{  margin: 10, width: '11%' }} >
                     <Link to="/Project">   <div>
-                        <div style={{ position: 'absolute', marginTop: "22%", marginLeft: 20 }} >
+                        <div style={{ position: 'absolute', marginTop: "8%", marginLeft: 20 }} >
                             <h1 style={{ color: 'white', marginBottom: -10, fontSize: '1em' }} >Project Title</h1>
                             <p style={{ textAlign: 'left', color: 'white', fontSize: '1em' }} >Category</p>
                         </div>
@@ -302,7 +309,7 @@ function Home() {
                         <img src={projectOne} style={{ marginTop: 30, width: 370 }} />
                     </div>    </Link>
                     <Link to="/Project">   <div>
-                        <div style={{ position: 'absolute', marginTop: "25%", marginLeft: 20 }} >
+                        <div style={{ position: 'absolute', marginTop: "8%", marginLeft: 20 }} >
                             <h1 style={{ color: 'white', marginBottom: -10, fontSize: '1em' }} >Project Title</h1>
                             <p style={{ textAlign: 'left', color: 'white', fontSize: '1em' }} >Category</p>
                         </div>
@@ -310,19 +317,20 @@ function Home() {
                 </div>
 
                 <Link to="/Project">  <div style={{ width: '35%', marginRight: 20, marginLeft: 20, }} >
-                    <div style={{ position: 'absolute', marginTop: "54%", marginLeft: 20 }} >
+                    <div style={{ position: 'absolute', marginTop: "20%", marginLeft: 20, width:'10%' }} >
                         <h1 style={{ color: 'white', marginBottom: -10, fontSize: '1em' }} >Project Title</h1>
                         <p style={{ textAlign: 'left', color: 'white', fontSize: '1em' }} >Category</p>
+                              
                     </div>
                     <img src={projectThree} style={{ marginTop: 30, height: 740, width: 370 }} />
                 </div> </Link>
                 <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 0, width: '20%' }} >
-                    <Link to="/Project">  <div>   <div style={{ position: 'absolute', marginTop: "25%", marginLeft: 20 }} >
+                    <Link to="/Project">  <div>   <div style={{ position: 'absolute', marginTop: "8%", marginLeft: 20 }} >
                         <h1 style={{ color: 'white', marginBottom: -10, fontSize: '1em' }} >Project Title</h1>
                         <p style={{ textAlign: 'left', color: 'white', fontSize: '1em' }} >Category</p>
                     </div>
                         <img src={projectFour} style={{ marginTop: 30, width: 370, height: 370 }} /> </div>  </Link>
-                    <Link to="/Project">   <div>   <div style={{ position: 'absolute', marginTop: "22%", marginLeft: 20 }} >
+                    <Link to="/Project">   <div>   <div style={{ position: 'absolute', marginTop: "8%", marginLeft: 20 }} >
                         <h1 style={{ color: 'white', marginBottom: -10, fontSize: '1em' }} >Project Title</h1>
                         <p style={{ textAlign: 'left', color: 'white', fontSize: '1em' }} >Category</p>
                     </div>
@@ -332,7 +340,7 @@ function Home() {
             {/* <div style={{ marginTop: 100 }} >
                 <h1 style={{ color: 'white', fontSize: 25, textAlign: 'center' }} >PDBS</h1>
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
-                    <p style={{ color: '#b3a9a2', margin: 10, fontSize: 10 }} >
+                    <p style={{ color: '#b3a9a 2', margin: 10, fontSize: 10 }} >
                         Architecture
                     </p>
                     <p style={{ color: '#b3a9a2', margin: 10, fontSize: 10 }} >
@@ -377,7 +385,7 @@ function Home() {
 
 
             <div style={{ paddingTop: 20, width: '100%', height: '100%', }} >
-                <img src={Footer} />
+                <img src={Footer} style={{width: '100%', height: '100%'}} />
 
                 {/* <hr style={{ borderColor: '#7D7D7D' }} />
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around'}} >
